@@ -104,7 +104,7 @@ app.use("/api/consumer-name", getConsumerNameRoute);
 app.use("/api/consumer-details", getConsumerDetailsRoute); // <-- here is your diaryNumber lookup
 
 // Start server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8081;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server running at http://0.0.0.0:${PORT}`);
 });
